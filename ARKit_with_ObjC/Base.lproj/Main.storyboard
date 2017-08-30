@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="Y9W-7m-v6c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUy-JE-Agw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BV1-FR-VrT" id="GZk-KQ-Rpo"/>
+                                </connections>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQG-x6-HZB">
+                                <rect key="frame" x="162" y="601" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5GX-SB-ICk"/>
+                                    <constraint firstAttribute="width" constant="50" id="r1J-Bu-T16"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="addNewARNodeAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="eYO-1V-vcX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-n1-FoN">
+                                <rect key="frame" x="327" y="28" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="jXT-y2-h9p"/>
+                                    <constraint firstAttribute="height" constant="40" id="nrf-J9-1DZ"/>
+                                </constraints>
+                                <state key="normal" image="refresh"/>
+                                <connections>
+                                    <action selector="refreshSessionAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="iki-lo-eeP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NUy-JE-Agw" firstAttribute="leading" secondItem="gFC-0Q-nBu" secondAttribute="leading" id="Ixj-8a-6hq"/>
+                            <constraint firstItem="gFC-0Q-nBu" firstAttribute="bottom" secondItem="kQG-x6-HZB" secondAttribute="bottom" constant="16" id="ScI-vH-pgL"/>
+                            <constraint firstItem="gFC-0Q-nBu" firstAttribute="trailing" secondItem="NUy-JE-Agw" secondAttribute="trailing" id="f6G-4D-WBL"/>
+                            <constraint firstItem="kQG-x6-HZB" firstAttribute="centerX" secondItem="Y9W-7m-v6c" secondAttribute="centerX" id="fdT-Rh-TKz"/>
+                            <constraint firstItem="NUy-JE-Agw" firstAttribute="top" secondItem="gFC-0Q-nBu" secondAttribute="top" id="nLX-gb-BFU"/>
+                            <constraint firstItem="gFC-0Q-nBu" firstAttribute="bottom" secondItem="NUy-JE-Agw" secondAttribute="bottom" id="oTi-b9-NSv"/>
+                            <constraint firstItem="GgJ-n1-FoN" firstAttribute="top" secondItem="gFC-0Q-nBu" secondAttribute="top" constant="8" id="rTF-z6-p4t"/>
+                            <constraint firstItem="gFC-0Q-nBu" firstAttribute="trailing" secondItem="GgJ-n1-FoN" secondAttribute="trailing" constant="8" id="xtD-qt-zqs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gFC-0Q-nBu"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sceneView" destination="NUy-JE-Agw" id="5E3-6B-jp7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="refresh" width="16" height="19"/>
+    </resources>
+</document>
