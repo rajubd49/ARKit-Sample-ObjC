@@ -440,7 +440,7 @@
 				DEVELOPMENT_TEAM = 6R98QEBT5C;
 				INFOPLIST_FILE = ARKit_with_ObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nSales.nVisionMobile2.evasolo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rajubd49.ARKit-with-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,7 +453,7 @@
 				DEVELOPMENT_TEAM = 6R98QEBT5C;
 				INFOPLIST_FILE = ARKit_with_ObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nSales.nVisionMobile2.evasolo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rajubd49.ARKit-with-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,6 +532,7 @@
 				81E307C71F56AEEE0033C9A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81E307C81F56AEEE0033C9A1 /* Build configuration list for PBXNativeTarget "ARKit_with_ObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +541,7 @@
 				81E307CA1F56AEEE0033C9A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81E307CB1F56AEEE0033C9A1 /* Build configuration list for PBXNativeTarget "ARKit_with_ObjCUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +550,7 @@
 				81E307CD1F56AEEE0033C9A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
