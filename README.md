@@ -3,7 +3,7 @@ ARKit sample application written in Objective C with features of Add, Remove, Sc
 
 ![](http://oi68.tinypic.com/wh1ff7.jpg)
 
-![](https://media.giphy.com/media/3ov9jU9vIOHvTWqsCI/giphy.gif)
+![Demo](http://i.makeagif.com/media/8-31-2017/j2JSmH.gif)
 
 ## Features
 
