@@ -51,7 +51,7 @@ Finally, open the `*.xcodeproj` file and build to your [supported device](#requi
 
 ## FAQ
 
-### I am getting the ARSessionConfiguration and ARWorldTrackingSessionConfiguration error:
+I am getting the ARSessionConfiguration and ARWorldTrackingSessionConfiguration error:
 
 `ARSessionConfiguration renamed to ARConfiguration and ARWorldTrackingSessionConfiguration renamed to ARWorldTrackingConfiguration in iOS 11 beta 5`
 
