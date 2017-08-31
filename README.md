@@ -3,6 +3,8 @@ ARKit sample application written in Objective C with features of Add, Remove, Sc
 
 ![](http://oi68.tinypic.com/wh1ff7.jpg )
 
+![Demo](https://im4.ezgif.com/tmp/ezgif-4-19be6844ff.gif )
+
 ## Features
 
 * Plane detection
