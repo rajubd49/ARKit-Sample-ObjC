@@ -1,6 +1,8 @@
 # ARKit-Sample-ObjC
 ARKit sample application written in Objective C with features of Add, Remove, Scale, Move single and multiple objects with plane detection, reset session and support checking.
 
+![](http://oi68.tinypic.com/wh1ff7.jpg)
+
 ![](https://media.giphy.com/media/3ov9jU9vIOHvTWqsCI/giphy.gif)
 
 ## Features
