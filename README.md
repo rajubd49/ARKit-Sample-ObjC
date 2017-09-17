@@ -65,4 +65,4 @@ Special thanks to
 
 ## License
 
-ARShooter is released under the MIT License. [See LICENSE](https://github.com/rajubd49/ARKit-Sample-ObjC/blob/master/LICENSE) for details.
+ARKit-Sample-ObjC is released under the MIT License. [See LICENSE](https://github.com/rajubd49/ARKit-Sample-ObjC/blob/master/LICENSE) for details.
