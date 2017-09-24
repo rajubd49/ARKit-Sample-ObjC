@@ -35,7 +35,7 @@ ARKit sample application written in Objective C with features of Add, Remove, Sc
 
 ## Communication
 
-- If you **found a bug**, open an issue after checking the [FAQ](#faq).
+- If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
 - If you **want to contribute**, submit a pull request.
 
@@ -48,14 +48,6 @@ $ git clone https://github.com/rajubd49/ARKit-Sample-ObjC.git
 ```
 
 Finally, open the `*.xcodeproj` file and build to your [supported device](#requirements)
-
-## FAQ
-
-I am getting the ARSessionConfiguration and ARWorldTrackingSessionConfiguration error:
-
-`ARSessionConfiguration renamed to ARConfiguration and ARWorldTrackingSessionConfiguration renamed to ARWorldTrackingConfiguration in iOS 11 beta 5`
-
----
 
 ## Thanks
 
