@@ -26,7 +26,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    if (ARWorldTrackingSessionConfiguration.isSupported) {
+    if (ARWorldTrackingConfiguration.isSupported) {
         [self startSession];
         self.sceneName = @"art.scnassets/cup.dae";
     } else {
@@ -254,7 +254,7 @@
 
 - (void)startSession {
     
-    ARWorldTrackingSessionConfiguration *configuration = [ARWorldTrackingSessionConfiguration new];
+    ARWorldTrackingConfiguration *configuration = [ARWorldTrackingConfiguration new];
     configuration.planeDetection = ARPlaneDetectionHorizontal;
     [self.sceneView.session runWithConfiguration:configuration];
 }
@@ -268,7 +268,7 @@
         [cube removeFromParentNode];
     }
     
-    ARWorldTrackingSessionConfiguration *configuration = [ARWorldTrackingSessionConfiguration new];
+    ARWorldTrackingConfiguration *configuration = [ARWorldTrackingConfiguration new];
     configuration.planeDetection = ARPlaneDetectionHorizontal;
     [self.sceneView.session runWithConfiguration:configuration options:ARSessionRunOptionResetTracking | ARSessionRunOptionRemoveExistingAnchors];
 }
