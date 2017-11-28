@@ -123,18 +123,20 @@
 
 -(void)checkMediaPermissionAndButtonState {
     
-    AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-    if(status == AVAuthorizationStatusAuthorized || status == AVAuthorizationStatusNotDetermined) {
-        [self.alertController showOverlyText:@"STARTING A NEW SESSION, TRY MOVING LEFT OR RIGHT" withDuration:2];
-    } else {
-        NSString *accessDescription = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSCameraUsageDescription"];
-        [self.alertController showPermissionAlertWithDescription:accessDescription];
-    }
-    
-    self.currentYAngle = 0.0;
-    self.removeButton.hidden = YES;
-    self.addNodeButton.hidden = YES;
-    self.snapshotButton.hidden = YES;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+        if(status == AVAuthorizationStatusAuthorized || status == AVAuthorizationStatusNotDetermined) {
+            [self.alertController showOverlyText:@"STARTING A NEW SESSION, TRY MOVING LEFT OR RIGHT" withDuration:2];
+        } else {
+            NSString *accessDescription = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSCameraUsageDescription"];
+            [self.alertController showPermissionAlertWithDescription:accessDescription];
+        }
+        
+        self.currentYAngle = 0.0;
+        self.removeButton.hidden = YES;
+        self.addNodeButton.hidden = YES;
+        self.snapshotButton.hidden = YES;
+    });
 }
 
 #pragma mark - Button Actions
