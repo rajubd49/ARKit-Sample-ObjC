@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ARViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y9W-7m-v6c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUy-JE-Agw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BV1-FR-VrT" id="GZk-KQ-Rpo"/>
+                                </connections>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQG-x6-HZB">
+                                <rect key="frame" x="167" y="669" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5GX-SB-ICk"/>
+                                    <constraint firstAttribute="width" constant="40" id="r1J-Bu-T16"/>
+                                </constraints>
+                                <state key="normal" image="add"/>
+                                <connections>
+                                    <action selector="addNodeAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="p1B-S5-H64"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-n1-FoN">
+                                <rect key="frame" x="327" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="jXT-y2-h9p"/>
+                                    <constraint firstAttribute="height" constant="40" id="nrf-J9-1DZ"/>
+                                </constraints>
+                                <state key="normal" image="refresh"/>
+                                <connections>
+                                    <action selector="refreshSessionAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="iki-lo-eeP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poX-dp-xUb">
+                                <rect key="frame" x="315" y="669" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="M9Q-of-fLf"/>
+                                    <constraint firstAttribute="height" constant="40" id="lsm-eK-yBT"/>
+                                </constraints>
+                                <state key="normal" image="camera"/>
+                                <connections>
+                                    <action selector="snapshotAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="so9-oE-aY4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igm-WJ-guS">
+                                <rect key="frame" x="20" y="669" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="01N-wJ-box"/>
+                                    <constraint firstAttribute="width" constant="40" id="kOa-GU-ZUB"/>
+                                </constraints>
+                                <state key="normal" image="delete"/>
+                                <connections>
+                                    <action selector="removeAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Cqp-nj-MYp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gFC-0Q-nBu" firstAttribute="bottom" secondItem="Igm-WJ-guS" secondAttribute="bottom" constant="20" id="7lg-bM-MYt"/>
+                            <constraint firstAttribute="bottom" secondItem="NUy-JE-Agw" secondAttribute="bottom" id="CSv-jH-9ic"/>
+                            <constraint firstItem="Igm-WJ-guS" firstAttribute="leading" secondItem="gFC-0Q-nBu" secondAttribute="leading" constant="20" id="FbZ-KQ-tiY"/>
+                            <constraint firstItem="NUy-JE-Agw" firstAttribute="leading" secondItem="gFC-0Q-nBu" secondAttribute="leading" id="JYX-Ur-gKw"/>
+                            <constraint firstItem="gFC-0Q-nBu" firstAttribute="trailing" secondItem="poX-dp-xUb" secondAttribute="trailing" constant="20" id="M5F-q7-ZDn"/>
+                            <constraint firstItem="NUy-JE-Agw" firstAttribute="top" secondItem="Y9W-7m-v6c" secondAttribute="top" id="ON3-sI-opb"/>
+                            <constraint firstItem="gFC-0Q-nBu" firstAttribute="bottom" secondItem="kQG-x6-HZB" secondAttribute="bottom" constant="20" id="ScI-vH-pgL"/>
+                            <constraint firstItem="kQG-x6-HZB" firstAttribute="centerX" secondItem="gFC-0Q-nBu" secondAttribute="centerX" id="fdT-Rh-TKz"/>
+                            <constraint firstItem="NUy-JE-Agw" firstAttribute="trailing" secondItem="gFC-0Q-nBu" secondAttribute="trailing" id="h90-xb-vdI"/>
+                            <constraint firstItem="gFC-0Q-nBu" firstAttribute="bottom" secondItem="poX-dp-xUb" secondAttribute="bottom" constant="20" id="nan-Rj-gQB"/>
+                            <constraint firstItem="GgJ-n1-FoN" firstAttribute="top" secondItem="gFC-0Q-nBu" secondAttribute="top" id="rTF-z6-p4t"/>
+                            <constraint firstItem="gFC-0Q-nBu" firstAttribute="trailing" secondItem="GgJ-n1-FoN" secondAttribute="trailing" constant="8" id="xtD-qt-zqs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gFC-0Q-nBu"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addNodeButton" destination="kQG-x6-HZB" id="zEZ-6Q-7Kt"/>
+                        <outlet property="refreshButton" destination="GgJ-n1-FoN" id="bmA-XK-XpI"/>
+                        <outlet property="removeButton" destination="Igm-WJ-guS" id="Jn3-qQ-oax"/>
+                        <outlet property="sceneView" destination="NUy-JE-Agw" id="5E3-6B-jp7"/>
+                        <outlet property="snapshotButton" destination="poX-dp-xUb" id="xVr-wa-WkQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="24" height="24"/>
+        <image name="camera" width="24" height="24"/>
+        <image name="delete" width="24" height="24"/>
+        <image name="refresh" width="24" height="24"/>
+    </resources>
+</document>
