@@ -3,9 +3,9 @@ ARKit sample application is written in Objective C with features of Add, Remove,
 
 ![Shapshot](https://preview.ibb.co/iUVoUb/IMG_0080.jpg)
 
-![GIF 1](![F1TdlB](https://i.makeagif.com/media/12-04-2017/F1TdlB.gif))
+![GIF1](![F1TdlB](https://i.makeagif.com/media/12-04-2017/F1TdlB.gif))
 
-![GIF 2](![nIe9jw](https://i.makeagif.com/media/12-04-2017/nIe9jw.gif))
+![GIF2](![nIe9jw](https://i.makeagif.com/media/12-04-2017/nIe9jw.gif))
 
 ## Features
 
@@ -26,7 +26,7 @@ ARKit sample application is written in Objective C with features of Add, Remove,
 * Object can be scale/zoom using Pinch gesture.
 * Object can be move using Pan gesture. Though this feature is not perfect yet.
 * Object can be change using the bottom plus and selecting specific object.
-* Object can take snapshot of the scene view using capture button.
+* Take snapshot of the scene view using capture button.
 * Reset session can be done using top right reset button.
 
 ## Requirements
