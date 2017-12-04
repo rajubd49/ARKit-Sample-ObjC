@@ -1,34 +1,38 @@
 # ARKit-Sample-ObjC
-ARKit sample application written in Objective C with features of Add, Remove, Scale, Move single and multiple objects with plane detection, reset session and support checking.
+ARKit sample application is written in Objective C with features of Add, Remove, Scale, Move, Shapshot for single and multiple objects with plane/surface detection, reset session and AR support checking.
 
-![](http://i67.tinypic.com/k1711g.jpg)
+![Shapshot](https://preview.ibb.co/iUVoUb/IMG_0080.jpg)
 
-![Demo](http://i.makeagif.com/media/8-31-2017/j2JSmH.gif)
+![GIF 1](![F1TdlB](https://i.makeagif.com/media/12-04-2017/F1TdlB.gif))
+
+![GIF 2](![nIe9jw](https://i.makeagif.com/media/12-04-2017/nIe9jw.gif))
 
 ## Features
 
-* Plane detection
+* Plane/Surface detection
 * Add single and multiple objects
 * Remove single and multiple objects
 * Scale/Zoom objects
 * Move objects
+* Take shapshot
 * Reset session
 * World tracking support checking
 
 ## User Control
 
 * Plane can be detect with enough light and bare minimum time to hold on a surface.
-* Object can be add using Tap gesture. Object will be added on the position where using tap but must must be after detecting plane.
-* Object can be remove using Long Press gesture for 0.5 second.
+* Object can be add using Tap gesture. Object will be added on the position where using tap but must be after detecting plane.
+* Object can be remove using tapping an object on scene if any and use remove button.
 * Object can be scale/zoom using Pinch gesture.
 * Object can be move using Pan gesture. Though this feature is not perfect yet.
 * Object can be change using the bottom plus and selecting specific object.
+* Object can take shapshot of the scene view using capture button.
 * Reset session can be done using top right reset button.
 
 ## Requirements
 
-* Xcode 9.0 Beta 3
-* iOS 11 Beta 3
+* Xcode 9.0
+* iOS 11
 * Device with A9 or better chip for ARWorldTrackingSessionConfiguration
 
 > Note: The app automatically detects if your device supports the ARWorldTrackingSessionConfiguration. If not, it will use the less immersive ARSessionConfiguration, which is to be supported by all devices. However, at the current time (Beta 3), ARSessionConfiguration is also only supported by devices with an A9 or better chip. **This means you need an iPhone 6S or better to use ARKit at the current time.**
