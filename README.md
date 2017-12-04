@@ -1,5 +1,5 @@
 # ARKit-Sample-ObjC
-ARKit sample application is written in Objective C with features of Add, Remove, Scale, Move, Shapshot for single and multiple objects with plane/surface detection, reset session and AR support checking.
+ARKit sample application is written in Objective C with features of Add, Remove, Scale, Move, Snapshot for single and multiple objects with plane/surface detection, reset session and AR support checking.
 
 ![Shapshot](https://preview.ibb.co/iUVoUb/IMG_0080.jpg)
 
@@ -14,7 +14,7 @@ ARKit sample application is written in Objective C with features of Add, Remove,
 * Remove single and multiple objects
 * Scale/Zoom objects
 * Move objects
-* Take shapshot
+* Take snapshot
 * Reset session
 * World tracking support checking
 
@@ -26,7 +26,7 @@ ARKit sample application is written in Objective C with features of Add, Remove,
 * Object can be scale/zoom using Pinch gesture.
 * Object can be move using Pan gesture. Though this feature is not perfect yet.
 * Object can be change using the bottom plus and selecting specific object.
-* Object can take shapshot of the scene view using capture button.
+* Object can take snapshot of the scene view using capture button.
 * Reset session can be done using top right reset button.
 
 ## Requirements
