@@ -3,9 +3,9 @@ ARKit sample application is written in Objective C with features of Add, Remove,
 
 ![Shapshot](https://preview.ibb.co/iUVoUb/IMG_0080.jpg)
 
-![GIF1](![F1TdlB](https://i.makeagif.com/media/12-04-2017/F1TdlB.gif))
+![GIF 1](https://i.makeagif.com/media/12-04-2017/F1TdlB.gif)
 
-![GIF2](![nIe9jw](https://i.makeagif.com/media/12-04-2017/nIe9jw.gif))
+![GIF 2](https://i.makeagif.com/media/12-04-2017/nIe9jw.gif)
 
 ## Features
 
