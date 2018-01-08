@@ -59,6 +59,10 @@ Special thanks to
 
 * [Mark Dawson](https://github.com/markdaws)
 
+## Author
+
+rajubd49@gmail.com
+
 ## License
 
 ARKit-Sample-ObjC is released under the MIT License. [See LICENSE](https://github.com/rajubd49/ARKit-Sample-ObjC/blob/master/LICENSE) for details.
